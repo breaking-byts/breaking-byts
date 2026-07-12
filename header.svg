@@ -1,155 +1,105 @@
-<svg fill="none" viewBox="0 0 850 300" width="100%" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" viewBox="0 0 850 220" width="100%" xmlns="http://www.w3.org/2000/svg">
   <style>
-    @keyframes scanline {
-      0% { transform: translateY(-100%); opacity: 0; }
-      10% { opacity: 0.1; }
-      90% { opacity: 0.1; }
-      100% { transform: translateY(300px); opacity: 0; }
-    }
-    @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.4; }
-    }
-    .text-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
-    .text-sans { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; letter-spacing: 0.1em; font-weight: 700; }
-    
-    .base { fill: #0A0A0A; }
-    .grid { stroke: #171717; stroke-width: 1; }
-    .grid-thick { stroke: #262626; stroke-width: 2; }
-    
-    .text-primary { fill: #E5E5E5; }
-    .text-muted { fill: #525252; }
-    .text-accent-logic { fill: #00E5FF; }
-    .text-accent-signal { fill: #FF3366; }
-    
-    .glow-logic { filter: drop-shadow(0 0 4px rgba(0, 229, 255, 0.4)); }
-    .glow-signal { filter: drop-shadow(0 0 4px rgba(255, 51, 102, 0.4)); }
-    
-    .pulse-anim { animation: pulse 2s infinite ease-in-out; }
+    .silk { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; fill: #E9ECEF; }
+    .silk-sub { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; fill: #8FBFA6; }
+    .silk-dim { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; fill: #5A8A6E; }
+    .ref { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; fill: #5A8A6E; font-size: 9px; }
+    .trace { stroke: #C9872E; fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+    .trace-t { stroke: #C9872E; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
   </style>
 
-  <!-- Base Plate -->
-  <rect width="100%" height="100%" class="base" rx="2" />
-  
-  <!-- Structural Grid -->
+  <!-- Soldermask -->
+  <rect width="100%" height="100%" fill="#1B4332" rx="3" />
+
+  <!-- Substrate grid -->
   <defs>
-    <pattern id="grid-pattern" width="20" height="20" patternUnits="userSpaceOnUse">
-      <path d="M 20 0 L 0 0 0 20" fill="none" class="grid" />
+    <pattern id="g" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1F5038" stroke-width="0.5" />
     </pattern>
   </defs>
-  <rect width="100%" height="100%" fill="url(#grid-pattern)" />
-  
-  <!-- Outer Framework -->
-  <rect x="15" y="15" width="820" height="270" class="grid-thick" fill="none" rx="2" />
-  
-  <!-- Header Bar -->
-  <rect x="15" y="15" width="820" height="25" fill="#171717" />
-  <text x="30" y="32" class="text-mono" font-size="11" fill="#737373" font-weight="bold">SYSTEM IDENTIFICATION / TELEMETRY DASHBOARD</text>
-  <text x="700" y="32" class="text-mono" font-size="11" fill="#737373">STAT: [ONLINE]</text>
-  <circle cx="810" cy="27" r="4" fill="#00E5FF" class="glow-logic pulse-anim" />
+  <rect width="100%" height="100%" fill="url(#g)" />
 
-  <!-- Divider -->
-  <line x1="425" y1="40" x2="425" y2="285" class="grid-thick" />
+  <!-- Board edge cut -->
+  <rect x="8" y="8" width="834" height="204" rx="2" stroke="#264D3B" stroke-width="1.5" fill="none" />
 
-  <!-- LEFT PANEL: MEMORY MAP (IDENTITY) -->
-  <g transform="translate(30, 60)">
-    <text x="0" y="0" class="text-sans" font-size="10" fill="#E5E5E5">MOD_01 :: MEMORY_MAP</text>
-    <line x1="0" y1="10" x2="380" y2="10" stroke="#262626" stroke-width="1" />
-    
-    <text x="0" y="30" class="text-mono text-muted" font-size="12">ADDR      00 01 02 03 04 05 06 07  DECODED</text>
-    
-    <!-- Data Row 1 (LEELANSH) -->
-    <text x="0" y="55" class="text-mono text-muted" font-size="13">0x004010</text>
-    <text x="75" y="55" class="text-mono text-accent-logic glow-logic" font-size="13">4C 45 45 4C 41 4E 53 48</text>
-    <text x="270" y="55" class="text-mono text-accent-logic glow-logic" font-size="13">LEELANSH</text>
-    
-    <!-- Data Row 2 (KHARBAND) -->
-    <text x="0" y="75" class="text-mono text-muted" font-size="13">0x004018</text>
-    <text x="75" y="75" class="text-mono text-primary" font-size="13">4B 48 41 52 42 41 4E 44</text>
-    <text x="270" y="75" class="text-mono text-primary" font-size="13">KHARBAND</text>
-    
-    <!-- Data Row 3 (A + padding) -->
-    <text x="0" y="95" class="text-mono text-muted" font-size="13">0x004020</text>
-    <text x="75" y="95" class="text-mono text-primary" font-size="13">41 00 00 00 00 00 00 00</text>
-    <text x="270" y="95" class="text-mono text-primary" font-size="13">A.......</text>
-    
-    <!-- Data Row 4 (ECE @ IIIT) -->
-    <text x="0" y="115" class="text-mono text-muted" font-size="13">0x004028</text>
-    <text x="75" y="115" class="text-mono text-muted" font-size="13">45 43 45 20 40 20 49 49</text>
-    <text x="270" y="115" class="text-mono text-muted" font-size="13">ECE @ II</text>
-    
-    <!-- Data Row 5 (IT-DELHI) -->
-    <text x="0" y="135" class="text-mono text-muted" font-size="13">0x004030</text>
-    <text x="75" y="135" class="text-mono text-muted" font-size="13">49 54 2D 44 45 4C 48 49</text>
-    <text x="270" y="135" class="text-mono text-muted" font-size="13">IT-DELHI</text>
+  <!-- Fiducial marks -->
+  <path d="M 18 12 L 12 12 L 12 18" stroke="#2D6B47" stroke-width="1.5" fill="none" />
+  <path d="M 832 12 L 838 12 L 838 18" stroke="#2D6B47" stroke-width="1.5" fill="none" />
+  <path d="M 12 202 L 12 208 L 18 208" stroke="#2D6B47" stroke-width="1.5" fill="none" />
+  <path d="M 838 202 L 838 208 L 832 208" stroke="#2D6B47" stroke-width="1.5" fill="none" />
 
-    <!-- Data Row 6 (SYSTEMS) -->
-    <text x="0" y="155" class="text-mono text-muted" font-size="13">0x004038</text>
-    <text x="75" y="155" class="text-mono text-accent-signal glow-signal" font-size="13">53 59 53 54 45 4D 53 20</text>
-    <text x="270" y="155" class="text-mono text-accent-signal glow-signal" font-size="13">SYSTEMS </text>
+  <!-- ═══ COPPER LAYER ═══ -->
 
-    <!-- Data Row 7 (ON-DEV ML) -->
-    <text x="0" y="175" class="text-mono text-muted" font-size="13">0x004040</text>
-    <text x="75" y="175" class="text-mono text-accent-signal glow-signal" font-size="13">4F 4E 2D 44 45 56 20 4D</text>
-    <text x="270" y="175" class="text-mono text-accent-signal glow-signal" font-size="13">ON-DEV M</text>
-    
-    <!-- Data Row 8 (L ) -->
-    <text x="0" y="195" class="text-mono text-muted" font-size="13">0x004048</text>
-    <text x="75" y="195" class="text-mono text-accent-signal glow-signal" font-size="13">4C 00 00 00 00 00 00 00</text>
-    <text x="270" y="195" class="text-mono text-accent-signal glow-signal" font-size="13">L.......</text>
-  </g>
+  <!-- Trace A: top-left bus, 45° jog to via -->
+  <path d="M 8 35 L 155 35 L 185 65" class="trace" />
 
-  <!-- RIGHT PANEL: OSCILLOSCOPE / TELEMETRY -->
-  <g transform="translate(445, 60)">
-    <text x="0" y="0" class="text-sans" font-size="10" fill="#E5E5E5">MOD_02 :: SIGNAL_ANALYSIS</text>
-    <line x1="0" y1="10" x2="380" y2="10" stroke="#262626" stroke-width="1" />
-    
-    <text x="0" y="30" class="text-mono text-muted" font-size="10">FREQ: 60Hz   |   MODE: BARE-METAL   |   TARGET: RV32I</text>
-    
-    <!-- Oscilloscope Grid Background -->
-    <rect x="0" y="45" width="370" height="150" fill="#0A0A0A" stroke="#262626" stroke-width="1" />
-    
-    <g transform="translate(0, 45)">
-      <!-- Inner Grid Lines -->
-      <line x1="0" y1="30" x2="370" y2="30" stroke="#171717" stroke-width="1" />
-      <line x1="0" y1="60" x2="370" y2="60" stroke="#171717" stroke-width="1" />
-      <line x1="0" y1="90" x2="370" y2="90" stroke="#171717" stroke-width="1" />
-      <line x1="0" y1="120" x2="370" y2="120" stroke="#171717" stroke-width="1" />
-      <line x1="74" y1="0" x2="74" y2="150" stroke="#171717" stroke-width="1" />
-      <line x1="148" y1="0" x2="148" y2="150" stroke="#171717" stroke-width="1" />
-      <line x1="222" y1="0" x2="222" y2="150" stroke="#171717" stroke-width="1" />
-      <line x1="296" y1="0" x2="296" y2="150" stroke="#171717" stroke-width="1" />
-      
-      <!-- Central Axis -->
-      <line x1="0" y1="75" x2="370" y2="75" stroke="#262626" stroke-dasharray="4 2" stroke-width="1" />
-      
-      <!-- Signal Path (Cyan) -->
-      <path d="M 0 75 
-               C 30 75, 40 20, 70 20 
-               S 100 130, 130 130 
-               S 160 30, 190 30 
-               S 220 120, 250 120 
-               S 280 40, 310 40
-               S 340 100, 370 75" 
-            stroke="#00E5FF" stroke-width="2" fill="none" class="glow-logic" />
-            
-      <!-- Anomaly Highlight Path (Pink) - Overlaying a spike -->
-      <path d="M 100 130 C 115 130, 120 10, 130 10 C 140 10, 145 130, 160 30" 
-            stroke="#FF3366" stroke-width="3" fill="none" class="glow-signal" />
+  <!-- Trace B: left mid-height, angles up to via -->
+  <path d="M 8 100 L 45 100 L 70 75" class="trace-t" />
 
-      <!-- Data Labels on Anomaly -->
-      <circle cx="130" cy="10" r="3" fill="#FF3366" />
-      <line x1="130" y1="10" x2="150" y2="-10" stroke="#FF3366" stroke-width="1" />
-      <text x="155" y="-5" class="text-mono text-accent-signal" font-size="10">ANOMALY DETECTED</text>
-      
-      <!-- Normal Metrics -->
-      <rect x="250" y="110" width="70" height="15" fill="#0A0A0A" />
-      <text x="252" y="121" class="text-mono text-accent-logic" font-size="10">LSTMs_SYNC</text>
-    </g>
-    
-    <!-- Footer / Meta -->
-    <text x="0" y="215" class="text-mono text-muted" font-size="10">SOURCE: RAW_CPU_LOGS.DAT</text>
-    <text x="270" y="215" class="text-mono text-primary" font-size="10">V_OUT: 1.25V</text>
-  </g>
-  
+  <!-- Trace C: top-right, via junction to horizontal run -->
+  <path d="M 660 45 L 695 45 L 720 70" class="trace" />
+  <path d="M 720 70 L 842 70" class="trace-t" />
+
+  <!-- Trace D: bottom-left horizontal to via -->
+  <path d="M 8 190 L 140 190" class="trace-t" />
+
+  <!-- Trace E: bottom-right, via angles up to horizontal run -->
+  <path d="M 700 190 L 730 160" class="trace-t" />
+  <path d="M 730 160 L 842 160" class="trace-t" />
+
+  <!-- Trace F: right-side vertical route connecting two vias -->
+  <path d="M 720 70 L 730 80 L 730 120 L 745 135" class="trace-t" />
+
+  <!-- ═══ VIA LAYER ═══ -->
+
+  <!-- Via: Trace A terminus -->
+  <circle cx="185" cy="65" r="5.5" fill="#1B4332" stroke="#C9872E" stroke-width="2" />
+  <circle cx="185" cy="65" r="2" fill="#F4C430" />
+
+  <!-- Via: Trace B terminus -->
+  <circle cx="70" cy="75" r="5" fill="#1B4332" stroke="#C9872E" stroke-width="1.8" />
+  <circle cx="70" cy="75" r="1.8" fill="#F4C430" />
+
+  <!-- Via: Trace C junction -->
+  <circle cx="720" cy="70" r="5.5" fill="#1B4332" stroke="#C9872E" stroke-width="2" />
+  <circle cx="720" cy="70" r="2" fill="#F4C430" />
+
+  <!-- Via: Trace D terminus -->
+  <circle cx="140" cy="190" r="5" fill="#1B4332" stroke="#C9872E" stroke-width="1.8" />
+  <circle cx="140" cy="190" r="1.8" fill="#F4C430" />
+
+  <!-- Via: Trace E origin -->
+  <circle cx="700" cy="190" r="5" fill="#1B4332" stroke="#C9872E" stroke-width="1.8" />
+  <circle cx="700" cy="190" r="1.8" fill="#F4C430" />
+
+  <!-- Via: Trace E/F junction -->
+  <circle cx="730" cy="160" r="5" fill="#1B4332" stroke="#C9872E" stroke-width="1.8" />
+  <circle cx="730" cy="160" r="1.8" fill="#F4C430" />
+
+  <!-- Via: Trace F terminus -->
+  <circle cx="745" cy="135" r="5" fill="#1B4332" stroke="#C9872E" stroke-width="1.8" />
+  <circle cx="745" cy="135" r="1.8" fill="#F4C430" />
+
+  <!-- Test point via: Trace C origin -->
+  <circle cx="660" cy="45" r="4" fill="#1B4332" stroke="#C9872E" stroke-width="1.5" />
+  <circle cx="660" cy="45" r="1.5" fill="#F4C430" />
+
+  <!-- Test point via: bottom-right corner -->
+  <circle cx="810" cy="190" r="3.5" fill="#1B4332" stroke="#C9872E" stroke-width="1.5" />
+  <circle cx="810" cy="190" r="1.3" fill="#F4C430" />
+
+  <!-- ═══ SILKSCREEN LAYER ═══ -->
+
+  <!-- Name -->
+  <text x="225" y="88" class="silk" font-size="36" font-weight="700" letter-spacing="0.12em">LEELANSH</text>
+  <text x="225" y="130" class="silk" font-size="36" font-weight="700" letter-spacing="0.12em">KHARBANDA</text>
+
+  <!-- Subtitle -->
+  <text x="227" y="155" class="silk-sub" font-size="14" letter-spacing="0.04em">B.Tech ECE · IIIT-Delhi</text>
+  <text x="227" y="175" class="silk-dim" font-size="12" letter-spacing="0.04em">Systems · Signals · On-Device ML</text>
+
+  <!-- Reference designators -->
+  <text x="22" y="205" class="ref">REV 03 · 2026</text>
+  <text x="735" y="205" class="ref">PCB-LK-24319-IIITD</text>
+
 </svg>
