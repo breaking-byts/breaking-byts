@@ -53,48 +53,48 @@
 
     <!-- Column header -->
     <text x="0"   y="30" class="mono text-muted" font-size="11">ADDR</text>
-    <text x="72"  y="30" class="mono text-muted" font-size="11">00 01 02 03 04 05 06 07</text>
-    <text x="280" y="30" class="mono text-muted" font-size="11">DECODED</text>
+    <text x="60"  y="30" class="mono text-muted" font-size="11">00 01 02 03 04 05 06 07</text>
+    <text x="255" y="30" class="mono text-muted" font-size="11">DECODED</text>
 
     <!-- Row 1: LEELANSH -->
-    <text x="0"   y="55" class="mono text-muted" font-size="12">0x4010</text>
-    <text x="72"  y="55" class="mono text-cyan glow-cyan" font-size="12">4C 45 45 4C 41 4E 53 48</text>
-    <text x="280" y="55" class="mono text-cyan glow-cyan" font-size="12">LEELANSH</text>
+    <text x="0"   y="52" class="mono text-muted" font-size="12">0x4010</text>
+    <text x="60"  y="52" class="mono text-cyan glow-cyan" font-size="12">4C 45 45 4C 41 4E 53 48</text>
+    <text x="255" y="52" class="mono text-cyan glow-cyan" font-size="12">LEELANSH</text>
 
     <!-- Row 2: KHARBAND -->
-    <text x="0"   y="77" class="mono text-muted" font-size="12">0x4018</text>
-    <text x="72"  y="77" class="mono text-white" font-size="12">4B 48 41 52 42 41 4E 44</text>
-    <text x="280" y="77" class="mono text-white" font-size="12">KHARBAND</text>
+    <text x="0"   y="72" class="mono text-muted" font-size="12">0x4018</text>
+    <text x="60"  y="72" class="mono text-white" font-size="12">4B 48 41 52 42 41 4E 44</text>
+    <text x="255" y="72" class="mono text-white" font-size="12">KHARBAND</text>
 
     <!-- Row 3: A....... -->
-    <text x="0"   y="99" class="mono text-muted" font-size="12">0x4020</text>
-    <text x="72"  y="99" class="mono text-white" font-size="12">41 00 00 00 00 00 00 00</text>
-    <text x="280" y="99" class="mono text-white" font-size="12">A.......</text>
+    <text x="0"   y="92" class="mono text-muted" font-size="12">0x4020</text>
+    <text x="60"  y="92" class="mono text-white" font-size="12">41 00 00 00 00 00 00 00</text>
+    <text x="255" y="92" class="mono text-white" font-size="12">A.......</text>
 
     <!-- Row 4: ECE @ II -->
-    <text x="0"   y="121" class="mono text-muted" font-size="12">0x4028</text>
-    <text x="72"  y="121" class="mono text-muted" font-size="12">45 43 45 20 40 20 49 49</text>
-    <text x="280" y="121" class="mono text-muted" font-size="12">ECE @ II</text>
+    <text x="0"   y="112" class="mono text-muted" font-size="12">0x4028</text>
+    <text x="60"  y="112" class="mono text-muted" font-size="12">45 43 45 20 40 20 49 49</text>
+    <text x="255" y="112" class="mono text-muted" font-size="12">ECE @ II</text>
 
     <!-- Row 5: IT-DELHI -->
-    <text x="0"   y="143" class="mono text-muted" font-size="12">0x4030</text>
-    <text x="72"  y="143" class="mono text-muted" font-size="12">49 54 2D 44 45 4C 48 49</text>
-    <text x="280" y="143" class="mono text-muted" font-size="12">IT-DELHI</text>
+    <text x="0"   y="132" class="mono text-muted" font-size="12">0x4030</text>
+    <text x="60"  y="132" class="mono text-muted" font-size="12">49 54 2D 44 45 4C 48 49</text>
+    <text x="255" y="132" class="mono text-muted" font-size="12">IT-DELHI</text>
 
     <!-- Row 6: SYSTEMS  -->
-    <text x="0"   y="165" class="mono text-muted" font-size="12">0x4038</text>
-    <text x="72"  y="165" class="mono text-pink glow-pink" font-size="12">53 59 53 54 45 4D 53 20</text>
-    <text x="280" y="165" class="mono text-pink glow-pink" font-size="12">SYSTEMS</text>
+    <text x="0"   y="152" class="mono text-muted" font-size="12">0x4038</text>
+    <text x="60"  y="152" class="mono text-pink glow-pink" font-size="12">53 59 53 54 45 4D 53 20</text>
+    <text x="255" y="152" class="mono text-pink glow-pink" font-size="12">SYSTEMS</text>
 
     <!-- Row 7: ON-DEV M -->
-    <text x="0"   y="187" class="mono text-muted" font-size="12">0x4040</text>
-    <text x="72"  y="187" class="mono text-pink glow-pink" font-size="12">4F 4E 2D 44 45 56 20 4D</text>
-    <text x="280" y="187" class="mono text-pink glow-pink" font-size="12">ON-DEV M</text>
+    <text x="0"   y="172" class="mono text-muted" font-size="12">0x4040</text>
+    <text x="60"  y="172" class="mono text-pink glow-pink" font-size="12">4F 4E 2D 44 45 56 20 4D</text>
+    <text x="255" y="172" class="mono text-pink glow-pink" font-size="12">ON-DEV M</text>
 
     <!-- Row 8: L....... -->
-    <text x="0"   y="209" class="mono text-muted" font-size="12">0x4048</text>
-    <text x="72"  y="209" class="mono text-pink glow-pink" font-size="12">4C 00 00 00 00 00 00 00</text>
-    <text x="280" y="209" class="mono text-pink glow-pink" font-size="12">L.......</text>
+    <text x="0"   y="192" class="mono text-muted" font-size="12">0x4048</text>
+    <text x="60"  y="192" class="mono text-pink glow-pink" font-size="12">4C 00 00 00 00 00 00 00</text>
+    <text x="255" y="192" class="mono text-pink glow-pink" font-size="12">L.......</text>
   </g>
 
   <!-- ═══════════════════════════════════════ -->
