@@ -101,6 +101,15 @@ Hardware-software co-design, bare-metal computing, and on-device machine learnin
 
 ---
 
+### SYSTEM_DIAGNOSTICS
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=breaking-byts&show_icons=true&hide_border=true&title_color=E5E5E5&icon_color=00E5FF&text_color=737373&bg_color=0A0A0A" height="160" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=breaking-byts&layout=compact&hide_border=true&title_color=E5E5E5&text_color=737373&bg_color=0A0A0A" height="160" alt="Top Languages" />
+</p>
+
+---
+
 ### ANCILLARY_FUNCTIONS
 
 - `photography` — Coordinator at **Tasveer**, The Media Society of IIITD
