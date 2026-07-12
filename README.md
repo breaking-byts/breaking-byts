@@ -1,112 +1,155 @@
 <p align="center">
-  <!-- If hosting locally on the profile repository -->
-  <img src="header.svg" alt="Leelansh Kharbanda - breaking-byts Header" width="100%" />
+  <img src="header.svg" alt="SYSTEM IDENTIFICATION / TELEMETRY DASHBOARD" width="100%" />
 </p>
-
-<p align="center">
-  <a href="mailto:leelansh24319@iiitd.ac.in">
-    <img src="https://img.shields.io/badge/Email-leelansh24319%40iiitd.ac.in-blue?style=flat-square&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-  <a href="https://linkedin.com/in/leelansh-kharbanda">
-    <img src="https://img.shields.io/badge/LinkedIn-Leelansh_Kharbanda-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="https://breaking-byts.github.io/Modulation-Studio/">
-    <img src="https://img.shields.io/badge/Modulation_Studio-Demo-success?style=flat-square&logo=firefox-browser&logoColor=white" alt="Modulation Studio Demo" />
-  </a>
-</p>
-
----
-
-### 👋 About Me
-
-I am **Leelansh Kharbanda**, an Undergraduate Student pursuing my **B.Tech in Electronics and Communication Engineering (ECE)** at the **Indraprastha Institute of Information Technology, Delhi (IIIT-Delhi)**. 
-
-My work sits at the intersection of **hardware-software co-design**, **on-device machine learning**, and **frontend performance engineering**. I'm passionate about low-overhead telemetry, bare-metal computing, and building responsive, interactive systems.
-
----
-
-### 🔬 Research & Current Focus
-
-*   **Undergraduate Researcher @ IIIT-Delhi** (Advised by **Dr. Sujay Deb**)
-    *   Developing an end-to-end **LSTM-based sequencing and profiling pipeline** for real-time anomaly detection using the **RaDaR dataset**.
-    *   Optimizing telemetry pipelines to minimize bare-metal execution latency and profiling overhead.
-*   **Hardware Security**
-    *   Training sequential classifiers and LSTM forecasters on large-scale CPU performance logs to identify runtime hardware attacks with high accuracy (**HPC-Boost**).
-
----
-
-### 🛠️ Technical Stack
 
 <table>
   <tr>
-    <td width="50%">
-      <strong>💻 Languages</strong><br />
-      <img src="https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white" />
-      <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" />
-      <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-      <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" />
-      <img src="https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white" />
-      <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
-      <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
+    <td width="33%"><strong>CONTACT_PROTOCOL</strong></td>
+    <td width="33%"><strong>NETWORK_NODE</strong></td>
+    <td width="33%"><strong>LIVE_TELEMETRY</strong></td>
+  </tr>
+  <tr>
+    <td>
+      <a href="mailto:leelansh24319@iiitd.ac.in">
+        <img src="https://img.shields.io/badge/leelansh24319%40iiitd.ac.in-0A0A0A?style=flat-square&logo=gmail&logoColor=E5E5E5" alt="Email" />
+      </a>
     </td>
-    <td width="50%">
-      <strong>⚙️ Embedded &amp; Systems</strong><br />
-      <img src="https://img.shields.io/badge/RISC--V-161616?style=flat-square&logo=cpu&logoColor=white" />
-      <img src="https://img.shields.io/badge/Bare--Metal-2E2E2E?style=flat-square" />
-      <img src="https://img.shields.io/badge/OOD_Pattern-00599C?style=flat-square" />
-      <img src="https://img.shields.io/badge/Thread_Safety-818cf8?style=flat-square" />
+    <td>
+      <a href="https://linkedin.com/in/leelansh-kharbanda">
+        <img src="https://img.shields.io/badge/IN:Leelansh_Kharbanda-0A0A0A?style=flat-square&logo=linkedin&logoColor=E5E5E5" alt="LinkedIn" />
+      </a>
+    </td>
+    <td>
+      <a href="https://breaking-byts.github.io/Modulation-Studio/">
+        <img src="https://img.shields.io/badge/RENDER:Modulation_Studio-0A0A0A?style=flat-square&logo=firefox-browser&logoColor=00E5FF" alt="Modulation Studio Demo" />
+      </a>
+    </td>
+  </tr>
+</table>
+
+### SYS_INFO :: PRIMARY_OPERATOR
+
+> B.Tech Electronics and Communication Engineering (ECE)  
+> **Indraprastha Institute of Information Technology, Delhi (IIIT-Delhi)**
+
+Hardware-software co-design, bare-metal computing, and on-device machine learning. Specializing in low-overhead telemetry pipelines, high-performance signal rendering, and real-time execution environments.
+
+---
+
+### MOD_01 :: CURRENT_RESEARCH
+
+<table>
+  <tr>
+    <td width="20%"><strong>TARGET_ENV</strong></td>
+    <td width="80%"><strong>Bare-Metal Anomaly Detection (Advised by Dr. Sujay Deb)</strong></td>
+  </tr>
+  <tr>
+    <td>ARCHITECTURE</td>
+    <td>
+      Developed an end-to-end <strong>LSTM-based sequencing and profiling pipeline</strong> for real-time anomaly detection utilizing the RaDaR dataset.
     </td>
   </tr>
   <tr>
-    <td width="50%">
-      <strong>🧠 ML &amp; Data Engineering</strong><br />
-      <img src="https://img.shields.io/badge/ONNX_Runtime-005A9C?style=flat-square&logo=onnx&logoColor=white" />
-      <img src="https://img.shields.io/badge/LanceDB-black?style=flat-square" />
-      <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white" />
-      <img src="https://img.shields.io/badge/XGBoost-111111?style=flat-square" />
-      <img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" />
-      <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" />
+    <td>OPTIMIZATION</td>
+    <td>
+      Engineered telemetry extraction routines to minimize bare-metal execution latency and profiling overhead.
     </td>
-    <td width="50%">
-      <strong>🛠️ Web, Tools &amp; DBs</strong><br />
-      <img src="https://img.shields.io/badge/React_19-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
-      <img src="https://img.shields.io/badge/Tauri-FFC131?style=flat-square&logo=tauri&logoColor=black" />
-      <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
-      <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" />
-      <img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" />
-      <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" />
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td width="20%"><strong>TARGET_ENV</strong></td>
+    <td width="80%"><strong>Hardware Security &amp; CPU Telemetry (HPC-Boost)</strong></td>
+  </tr>
+  <tr>
+    <td>ARCHITECTURE</td>
+    <td>
+      Trained sequential classifiers and LSTM forecasters against large-scale CPU performance logs to intercept runtime hardware attacks.
     </td>
   </tr>
 </table>
 
 ---
 
-### 🚀 Highlighted Projects
+### MOD_02 :: SYSTEM_COMPONENTS
 
-*   🤖 **[Life-OS](https://github.com/breaking-byts/Life-Os)** (Tauri, React 19, ONNX Runtime, LanceDB)
-    *   Building a privacy-first, zero-latency desktop companion utilizing on-device ML recommendation models.
-    *   Optimized database queries and IPC pipeline execution to prevent UI-thread blocking using asynchronous scheduling and TanStack Query.
-*   🎛️ **[Modulation Studio](https://github.com/breaking-byts/Modulation-Studio)** (TypeScript, HTML5 Canvas)
-    *   Engineered a framework-free simulator for 8 digital modulation schemes with a real-time Fourier Transform (FFT) renderer.
-    *   Achieved a constant **60 FPS render output** by constructing a custom double-buffered animation loop and event debounce manager.
-*   📟 **[RISC-V Assembler and Simulator](https://github.com/breaking-byts/RISC-V-Assembler-and-Simulator)** (Python)
-    *   Designed a functional RV32I instruction execution sandbox including a complete two-pass assembler and visual register-state tracer.
-*   🛡️ **[HPC-Boost: Malware Detection via CPU Telemetry](https://github.com/breaking-byts/HPC_Boost)** (Python, XGBoost, LSTMs)
-    *   Classifying transient hardware anomalies using lightweight feature selection algorithms (Isolation Forests, XGBoost) and sequential LSTM forecasters.
+<table>
+  <tr>
+    <td width="25%"><strong>LOW_LEVEL</strong></td>
+    <td width="75%">
+      <img src="https://img.shields.io/badge/C-0A0A0A?style=flat-square&logo=c&logoColor=E5E5E5" />
+      <img src="https://img.shields.io/badge/C++-0A0A0A?style=flat-square&logo=c%2B%2B&logoColor=E5E5E5" />
+      <img src="https://img.shields.io/badge/Rust-0A0A0A?style=flat-square&logo=rust&logoColor=E5E5E5" />
+      <img src="https://img.shields.io/badge/RISC--V-0A0A0A?style=flat-square&logo=cpu&logoColor=E5E5E5" />
+      <img src="https://img.shields.io/badge/Bare--Metal-0A0A0A?style=flat-square" />
+    </td>
+  </tr>
+  <tr>
+    <td><strong>ML_INFERENCE</strong></td>
+    <td>
+      <img src="https://img.shields.io/badge/Python-0A0A0A?style=flat-square&logo=python&logoColor=E5E5E5" />
+      <img src="https://img.shields.io/badge/ONNX_Runtime-0A0A0A?style=flat-square&logo=onnx&logoColor=E5E5E5" />
+      <img src="https://img.shields.io/badge/LanceDB-0A0A0A?style=flat-square" />
+      <img src="https://img.shields.io/badge/Scikit--Learn-0A0A0A?style=flat-square&logo=scikit-learn&logoColor=E5E5E5" />
+      <img src="https://img.shields.io/badge/XGBoost-0A0A0A?style=flat-square" />
+    </td>
+  </tr>
+  <tr>
+    <td><strong>UI_RENDERING</strong></td>
+    <td>
+      <img src="https://img.shields.io/badge/TypeScript-0A0A0A?style=flat-square&logo=typescript&logoColor=E5E5E5" />
+      <img src="https://img.shields.io/badge/React_19-0A0A0A?style=flat-square&logo=react&logoColor=E5E5E5" />
+      <img src="https://img.shields.io/badge/Tauri-0A0A0A?style=flat-square&logo=tauri&logoColor=E5E5E5" />
+      <img src="https://img.shields.io/badge/Canvas_API-0A0A0A?style=flat-square" />
+    </td>
+  </tr>
+</table>
 
 ---
 
-### 📈 GitHub Analytics
+### MOD_03 :: DEPLOYED_SUBSYSTEMS
+
+<table>
+  <tr>
+    <td width="30%"><strong><a href="https://github.com/breaking-byts/Life-Os">Life-OS</a></strong></td>
+    <td width="70%">
+      Privacy-first desktop companion.<br/>
+      <em>Stack: Tauri, React 19, ONNX Runtime, LanceDB</em><br/>
+      Optimized database queries and IPC pipelines to prevent UI-thread blocking via asynchronous scheduling and TanStack Query.
+    </td>
+  </tr>
+  <tr>
+    <td><strong><a href="https://github.com/breaking-byts/Modulation-Studio">Modulation Studio</a></strong></td>
+    <td>
+      Framework-free DSP simulator.<br/>
+      <em>Stack: TypeScript, HTML5 Canvas</em><br/>
+      Engineered real-time FFT rendering for 8 digital modulation schemes, achieving a constant 60 FPS via custom double-buffered animation loops.
+    </td>
+  </tr>
+  <tr>
+    <td><strong><a href="https://github.com/breaking-byts/RISC-V-Assembler-and-Simulator">RV32I Sandbox</a></strong></td>
+    <td>
+      Instruction execution environment.<br/>
+      <em>Stack: Python</em><br/>
+      Functional RV32I execution sandbox featuring a two-pass assembler and visual register-state tracer.
+    </td>
+  </tr>
+</table>
+
+---
+
+### MOD_04 :: SYSTEM_DIAGNOSTICS
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=breaking-byts&show_icons=true&theme=tokyonight&hide_border=true&title_color=6366f1&icon_color=818cf8&text_color=94a3b8&bg_color=0a071b" height="170" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=breaking-byts&layout=compact&theme=tokyonight&hide_border=true&title_color=6366f1&text_color=94a3b8&bg_color=0a071b" height="170" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api?username=breaking-byts&show_icons=true&theme=tokyonight&hide_border=true&title_color=E5E5E5&icon_color=00E5FF&text_color=737373&bg_color=0A0A0A" height="150" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=breaking-byts&layout=compact&theme=tokyonight&hide_border=true&title_color=E5E5E5&text_color=737373&bg_color=0A0A0A" height="150" alt="Top Languages" />
 </p>
 
 ---
 
-### 📷 Beyond the Editor
+### MOD_05 :: ANCILLARY_FUNCTIONS
 
-*   **Photography**: Currently serving as the **Coordinator** at **Tasveer – The Media Society of IIITD**. I capture light, symmetry, and streetscapes when I'm not writing code.
-*   **Reverse Engineering**: Tinkering with binaries to analyze assembly execution and memory structures.
-*   **Fitness & Sports**: Avid cricket fan and dedicated weight-lifter. Helps keep memory fragmentation low!
+*   `EXEC(photography)`: Coordinator at **Tasveer – The Media Society of IIITD**. Capturing light, symmetry, and streetscapes.
+*   `EXEC(reverse_engineering)`: Binary analysis, memory structure traversal, and assembly decryption.
+*   `EXEC(hardware_maintenance)`: Weight-lifting and cricket. Preventing physical memory fragmentation.
