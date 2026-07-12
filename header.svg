@@ -1,0 +1,91 @@
+<svg fill="none" viewBox="0 0 800 200" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes pulse {
+      0% { opacity: 0.3; }
+      50% { opacity: 1; }
+      100% { opacity: 0.3; }
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    .title { font: bold 28px 'Segoe UI', -apple-system, sans-serif; fill: #6366f1; }
+    .subtitle { font: 600 15px 'Courier New', Courier, monospace; fill: #818cf8; }
+    .tagline { font: 400 13px 'Segoe UI', -apple-system, sans-serif; fill: #94a3b8; }
+    .term-prompt { font: bold 12px monospace; fill: #10b981; }
+    .term-text { font: 12px monospace; fill: #f8fafc; }
+    .accent-glow { filter: drop-shadow(0px 0px 8px rgba(99, 102, 241, 0.5)); }
+    .pulse-dot { animation: pulse 2s infinite ease-in-out; }
+    .pulse-dot-alt { animation: pulse 2.5s infinite ease-in-out; }
+    .cursor { animation: blink 1s infinite; fill: #818cf8; }
+  </style>
+
+  <!-- Background Card -->
+  <rect width="100%" height="100%" fill="#0a071b" rx="12" stroke="#312e81" stroke-width="1.5"/>
+
+  <!-- Grid Pattern -->
+  <defs>
+    <pattern id="grid-pattern" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1c163a" stroke-width="0.8"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grid-pattern)" rx="12" />
+
+  <!-- Circuit Graphic Accents -->
+  <path d="M 0 60 L 120 60 L 150 90 L 300 90 M 300 90 L 320 110 L 800 110" stroke="#1e1b4b" stroke-width="2.5" fill="none" />
+  <path d="M 100 200 L 180 120 L 400 120 L 420 100 L 800 100" stroke="#6366f1" stroke-opacity="0.15" stroke-width="1.5" fill="none" />
+
+  <!-- Pulsing Circuit Nodes -->
+  <circle cx="150" cy="90" r="3.5" fill="#6366f1" class="accent-glow pulse-dot" />
+  <circle cx="420" cy="100" r="3.5" fill="#818cf8" class="accent-glow pulse-dot-alt" />
+
+  <!-- Left Column: Branding / Info -->
+  <g transform="translate(35, 45)">
+    <!-- Terminal-like Title bar -->
+    <rect x="-10" y="-20" width="350" height="28" rx="6" fill="#130f2c" stroke="#2e2762" stroke-width="1"/>
+    <circle cx="5" cy="-6" r="3" fill="#ef4444" />
+    <circle cx="17" cy="-6" r="3" fill="#f59e0b" />
+    <circle cx="29" cy="-6" r="3" fill="#10b981" />
+    <text x="47" y="-2" font-family="monospace" font-size="10" fill="#64748b" letter-spacing="1">guest@breaking-byts:~</text>
+
+    <!-- Main Title -->
+    <text x="0" y="42" class="title accent-glow">Leelansh Kharbanda</text>
+    
+    <!-- Subtitle (Dynamic Console Style) -->
+    <text x="0" y="70" class="subtitle">~/breaking-byts<tspan class="cursor">_</tspan></text>
+    
+    <!-- Taglines -->
+    <text x="0" y="94" class="tagline">B.Tech ECE @ IIIT-Delhi</text>
+    <text x="0" y="112" class="tagline" fill="#64748b">Low-Level Systems | Embedded ML | Signal Rendering</text>
+  </g>
+
+  <!-- Right Column: Terminal Window -->
+  <g transform="translate(465, 25)">
+    <!-- Terminal Shell -->
+    <rect width="300" height="150" rx="8" fill="#04020f" stroke="#4f46e5" stroke-opacity="0.3" stroke-width="1.5"/>
+    <rect width="300" height="24" rx="8" fill="#0d0a21"/>
+    <circle cx="12" cy="12" r="3.5" fill="#ef4444"/>
+    <circle cx="22" cy="12" r="3.5" fill="#f59e0b"/>
+    <circle cx="32" cy="12" r="3.5" fill="#10b981"/>
+    <text x="100" y="16" font-family="monospace" font-size="10" fill="#475569">system_profile.sh</text>
+
+    <!-- Shell Output -->
+    <g transform="translate(15, 42)">
+      <text x="0" y="15" class="term-prompt">user@iiitd:~$</text>
+      <text x="95" y="15" class="term-text">./display_focus</text>
+
+      <!-- Key-Value Pairs -->
+      <text x="0" y="40" font-family="monospace" font-weight="bold" font-size="11" fill="#818cf8">Architecture</text>
+      <text x="100" y="40" font-family="monospace" font-size="11" fill="#e2e8f0">RV32I RISC-V, Bare-Metal</text>
+
+      <text x="0" y="58" font-family="monospace" font-weight="bold" font-size="11" fill="#10b981">Models</text>
+      <text x="100" y="58" font-family="monospace" font-size="11" fill="#e2e8f0">LSTMs, ONNX Runtime</text>
+
+      <text x="0" y="76" font-family="monospace" font-weight="bold" font-size="11" fill="#e11d48">State DB</text>
+      <text x="100" y="76" font-family="monospace" font-size="11" fill="#e2e8f0">LanceDB Vector Search</text>
+
+      <text x="0" y="94" font-family="monospace" font-weight="bold" font-size="11" fill="#f59e0b">DSP-Render</text>
+      <text x="100" y="94" font-family="monospace" font-size="11" fill="#10b981">60 FPS Canvas (Double-Buff)</text>
+    </g>
+  </g>
+</svg>
