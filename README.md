@@ -104,12 +104,11 @@ Hardware-software co-design, bare-metal computing, and on-device machine learnin
 ### SYSTEM_DIAGNOSTICS
 
 <p align="center">
-  <a href="https://github.com/breaking-byts">
-    <img src="https://github-readme-stats.vercel.app/api?username=breaking-byts&amp;show_icons=true&amp;theme=github_dark&amp;hide_border=true&amp;bg_color=0A0A0A&amp;cache_seconds=86400" height="160" alt="GitHub Stats" />
-  </a>
-  <a href="https://github.com/breaking-byts">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=breaking-byts&amp;layout=compact&amp;theme=github_dark&amp;hide_border=true&amp;bg_color=0A0A0A&amp;cache_seconds=86400" height="160" alt="Top Languages" />
-  </a>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=breaking-byts&theme=github_dark" alt="GitHub Stats" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=breaking-byts&theme=github_dark" alt="Top Languages" />
+</p>
+<p align="center">
+  <img src="https://streak-stats.demolab.com/?user=breaking-byts&theme=dark&hide_border=true&background=0A0A0A&ring=00E5FF&fire=FF3366&currStreakLabel=E5E5E5" alt="GitHub Streak" />
 </p>
 
 ---
